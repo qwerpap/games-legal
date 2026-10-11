@@ -17,54 +17,94 @@ footer{margin-top:3em;color:#6b7080;font-size:.82rem}
 </style></head>
 <body><div class="wrap">
 <h1>Velvi</h1>
-<div class="meta">Privacy Policy · Last updated August 27, 2026</div>
+<div class="meta">Privacy Policy · Last updated October 11, 2026</div>
 <div class="card"><strong>Short version:</strong> Velvi has no accounts and no
-tracking. Your photos and edits stay on your device. The only exception is AI effects:
-if you use one, that single photo is sent to a processing service, used to produce the
-result, and not stored afterwards.</div>
+advertising tracking. Your photos and edits stay on your device. Face features are
+detected on your iPhone only, used in memory to apply the retouch you chose, and never
+stored or sent anywhere. The only time a photo leaves your device is when you start an
+AI effect: that single photo is sent to a processing service, used to produce the
+result, and deleted right after.</div>
 
-<h2>Information we collect</h2>
-<p><strong>None directly.</strong> Velvi does not ask for your name, email, phone number,
-location or contacts. There is no sign-in, no profile and no analytics SDK in the app.</p>
+<h2>1. Information we collect</h2>
+<p>We do not ask for your name, email, phone number, location or contacts. There is
+no sign-in and no profile. What the app touches is described section by section below:
+your photos (2), face data (3), AI effects (4), the AI assistant (5), the camera (6)
+and subscriptions (7).</p>
 
-<h2>Your photos</h2>
+<h2>2. Your photos</h2>
 <p>Photos you open are copied into the app's own storage so your work survives changes in
 your photo library. Everything you do — crops, colour, retouch, brush strokes, text —
-is stored <em>on your device only</em>, as a description of the edits rather than as a
-flattened image. Deleting the app removes all of it.</p>
-
+is stored <strong>on your device only</strong>, as a description of the edits rather than as a
+flattened image. Deleting a project in the app, or deleting the app, removes all of it.</p>
 <p>Velvi asks for photo library access only when you open a photo, and for
 <em>add-only</em> access when you save a result. It never scans your library in the
 background.</p>
 
-<h2>AI effects</h2>
-<p>Effects marked as AI are not computed on your phone. When you start one, the selected
-photo is uploaded over an encrypted connection to a processing service, transformed, and
-returned to your device. The photo is used for that request only and is not kept, sold
-or used to train anything. If you never open an AI effect, no photo ever leaves your
-device.</p>
+<h2 id="face-data">3. Face data</h2>
+<p><strong>What face data the app uses.</strong> When you open a face tool (skin
+smoothing, skin tone, glow, face slimming, eye, nose and lip adjustments, makeup, hair
+colour) Velvi uses Apple's on-device Vision framework to find the face in the photo you
+are editing: the face outline and the positions of facial features such as the eyes,
+eyebrows, nose and lips. Background tools use Vision in the same way to separate the
+person from the background. These positions are only used to place the effect in the
+right spot of the photo.</p>
+<p><strong>What it is not.</strong> Velvi does not recognise or identify people, does not
+create face templates, face prints or any biometric identifier, does not compare faces,
+and does not use the TrueDepth camera, Face ID or ARKit face tracking.</p>
+<p><strong>Where it is processed and stored.</strong> Face detection runs entirely on
+your iPhone. The detected face positions exist only in the device's memory while the
+photo is being edited. They are not written to storage, not included in your saved
+projects (projects keep only your slider values and brush strokes), not sent to our
+servers or to anyone else, and not used for analytics, advertising or training.</p>
+<p><strong>Retention and deletion.</strong> Face data is discarded as soon as the edit is
+rendered or you leave the photo, and is recomputed the next time you open a face tool.
+It is never retained after that, so there is nothing to delete. Your photos and edits
+themselves stay on your device until you delete the project or the app.</p>
+<p><strong>Sharing.</strong> Face data is not shared with any third party. The single
+exception concerning your photo (not face data) is an AI effect you start yourself —
+see section 4.</p>
 
-<h2>AI assistant</h2>
+<h2>4. AI effects</h2>
+<p>Effects marked as AI are not computed on your phone. When you start one, the selected
+photo — which may show a face — is uploaded over an encrypted (HTTPS) connection to our
+processing server and passed to our image-processing provider,
+<a href="https://fal.ai/privacy">fal.ai</a> (Features and Labels, Inc.), which transforms
+it and returns the result to your device. No face data, measurements or identifiers are
+derived from it or sent with it.</p>
+<p>The photo is used for that one request only. Our server does not store it. We
+instruct the provider not to keep the request in its history and to delete the
+resulting file automatically within 5 minutes; the provider does not use customer data
+to train its models. The photo is never sold or used for any other purpose. If you
+never start an AI effect, no photo ever leaves your device.</p>
+
+<h2>5. AI assistant</h2>
 <p>The assistant understands a request written in plain words and opens the matching tool.
 Only the text you type is sent to our service, together with the language of your device —
-never your photos, and never anything the assistant was not asked. The request is used to
-answer it and is not stored afterwards. If you never open the assistant, nothing is sent.</p>
+never your photos or face data. The request is used to answer it and is not stored
+afterwards. If you never open the assistant, nothing is sent.</p>
 
-<h2>Camera</h2>
+<h2>6. Camera</h2>
 <p>The in-app camera is used only when you open it, to take a photo you then edit. Nothing
 is recorded or transmitted while the camera preview is on screen.</p>
 
-<h2>Subscriptions</h2>
-<p>Payments are handled entirely by Apple. We never see your card details. Apple tells the
-app only whether an active subscription exists.</p>
+<h2>7. Subscriptions</h2>
+<p>Payments are handled entirely by Apple. We never see your card details.</p>
+<p>To show current prices and offers and to check whether your subscription is
+active, Velvi uses <a href="https://adapty.io/privacy">Adapty</a> (Adapty Tech
+Inc.). Adapty receives a random identifier generated for this installation (not your
+Apple ID and not the advertising identifier), your App Store purchase history for
+Velvi, and basic app events such as when the subscription screen is shown. It is not
+linked to your name or email, not sold, and not used to track you across other apps or
+websites. Photos and face data are never sent to Adapty.</p>
 
-<h2>Children</h2>
-<p>Velvi is not directed at children under 13 and collects no personal data from anyone.</p>
+<h2>8. Children</h2>
+<p>Velvi is not directed at children under 13 and does not knowingly collect personal
+data from them.</p>
 
-<h2>Changes</h2>
+<h2>9. Changes</h2>
 <p>If this policy changes, the date at the top of this page changes with it.</p>
 
-<h2>Contact</h2>
-<p>Questions: <a href="mailto:netkaktakto@gmail.com">netkaktakto@gmail.com</a></p>
+<h2>10. Contact</h2>
+<p>Questions: <a href="mailto:nastya.shchaveleva@internet.ru">nastya.shchaveleva@internet.ru</a></p>
 <div class="nav"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="support.html">Support</a></div>
 <footer>© 2026 Anastassiya Shugaley</footer></div></body></html>
